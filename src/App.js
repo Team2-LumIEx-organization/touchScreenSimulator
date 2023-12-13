@@ -35,11 +35,12 @@ function App() {
       <AppProvider>
         <ThemeContextProvider>
           <Locations
-            show={show === "LOCATIONS"}
+            show={true}
             onLocationClick={onLocationClick}
+            seLectedLocation={Number(seLectedLocation)}
           />
           <Cabinents
-            show={show === "CABINENTS"}
+            show={true}
             onBackClick={onLocationClick}
             seLectedLocation={seLectedLocation}
             onCabinentClick={onCabinentClick}
